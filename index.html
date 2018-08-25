@@ -11,22 +11,54 @@
       </a>
       <nav class="site-navigation">
       	<ul>
-          <li><a href="#catalog">Каталог</a></li>
+          <li>
+            <a href="#catalog">Каталог</a>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">Новинки</a>
+                </li>
+                <li>
+                  <a href="#">Сливочное</a>
+                </li>
+                <li>
+                  <a href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a href="#">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li><a href="#delivery-and-payment">Доставка и оплата</a></li>
           <li><a href="#about-company">О Компании</a></li>
       	</ul>
+      </nav>
+      <div>
       	<ul>
       		<li class="logo-search">
       			<a href="#search">#</a>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <input type="search" name="search" placeholder="Что ищем?">
+            </form>
       		</li>
       		<li class="logo-sign-in">
-      			<a href="#sign-in">Войти</a>
+      			<a href="#sign-in">Вход</a>
+            <form action="https://echo.htmlacademy.ru" method="post">
+             <input type="email" placeholder="Электронная почта">
+             <input type="password" placeholder="Пароль">
+             <button>Войти</button>
+            </form>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
       		</li>
       		<li class="logo-basket">
       			<a href="#basket">Пусто</a>
       		</li>
       	</ul>
-      </nav>
       <p class="working-hours">С 10 до 20, ежедневно</p>
       <p class="phone">8 812 450-25-25</p>
     </header>
@@ -135,10 +167,20 @@
 		  </div>
       <div>
         <a class="logo-footer" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo_htmlacademy_small.svg" width="108" height="39" alt="html academy ">
+          <img src="img/logo_htmlacademy.svg" width="108" height="39" alt="html academy ">
         </a>
 		    <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
 		  </div>
     </footer>
+    <div>
+      <h2>Мы обязательно вам ответим!</h2>
+      <button type="button" title="Закрыть">Закрыть</button>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="text" placeholder="Как вас зовут?">
+            <input type="email" placeholder="Ваша почта для ответа?">
+            <textarea rows="5" placeholder="Напишите что-нибудь..."></textarea>
+            <button>Отправить</button>
+          </form>
+    </div>
   </body>
 </html>
