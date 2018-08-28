@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="logo-header">
+    <header class="page_header">
+      <a class="logo_header">
         <img src="img/logo_gllacy.svg" width="154" height="64" alt="Gllacy Shop">
       </a>
-      <nav class="site-navigation">
-        <ul>
+      <nav class="main_navigation">
+        <ul class="site_navigation">
           <li>
             <a href="#catalog">Каталог</a>
             <div>
-              <ul>
+              <ul class="catalog_list">
                 <li>
                   <a href="#">Новинки</a>
                 </li>
@@ -33,20 +35,20 @@
               </ul>
             </div>
           </li>
-          <li><a href="#delivery-and-payment">Доставка и оплата</a></li>
-          <li><a href="#about-company">О Компании</a></li>
+          <li><a href="#delivery_and_payment">Доставка и оплата</a></li>
+          <li><a href="#about_company">О Компании</a></li>
         </ul>
       </nav>
       <div>
         <ul>
-          <li class="logo-search">
+          <li class="logo_search">
             <button>#</button>
             <form action="https://echo.htmlacademy.ru" method="get">
               <input type="search" name="search" placeholder="Что ищем?">
             </form>
           </li>
-          <li class="logo-sign-in">
-            <a href="#sign-in">Вход</a>
+          <li class="logo_sign_in">
+            <a href="#sign_in">Вход</a>
             <form action="https://echo.htmlacademy.ru" method="post">
               <input type="email" name="email" placeholder="Электронная почта">
               <input type="password" name="password" placeholder="Пароль">
@@ -55,16 +57,16 @@
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
           </li>
-          <li class="logo-basket">
+          <li class="logo_basket">
             <a href="#basket">Пусто</a>
           </li>
         </ul>
       </div>
-      <p class="working-hours">С 10 до 20, ежедневно</p>
+      <p class="working_hours">С 10 до 20, ежедневно</p>
       <p class="phone">8 812 450-25-25</p>
     </header>
     <main>
-      <h1 class="visually-hidden">Глейси-главная</h1>
+      <h1 class="visually_hidden">Глейси-главная</h1>
       <div id="slider">
         <div class="slide">
           <img src="img/slider_slide_1" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
@@ -83,37 +85,37 @@
         </div>
       </div>
       <article class="raspberry">
-        <h2 class="raspberry-free">Малинка даром!</h2>
+        <h2 class="raspberry_free">Малинка даром!</h2>
         <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ малинового варенья бесплатно.</p>
         <a href="#">Хочу варенье!</a>
       </article>
       <article class="chocolates">
-        <h2 class="chocolates-free">Шоколадки даром!</h2>
+        <h2 class="chocolates_free">Шоколадки даром!</h2>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
         <a href="#">Хочу шоколадки!</a>
       </article>
       <section>
-        <h2 class="visually-hidden">Продукты</h2>
+        <h2 class="visually_hidden">Продукты</h2>
         <ul class="products">
-          <li class="product-wrap">
+          <li class="product_wrap">
             <img src="img/ice_cream_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <a href="#" class="product">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </li>
-          <li class="product-wrap">
+          <li class="product_wrap">
             <img src="img/ice_cream_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <a href="#" class="product">Сливочно-кофейное с кусочками шоколада</a>
           </li>
-          <li class="product-wrap">
+          <li class="product_wrap">
             <img src="img/ice_cream_3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <a href="#" class="product">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
-          <li class="product-wrap">
+          <li class="product_wrap">
             <img src="img/ice_cream_4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <a href="#" class="product">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
         </ul>
       </section>
-      <section class="about-gllacy">
+      <section class="about_gllacy">
         <h2>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul>
           <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -129,17 +131,17 @@
         </p>
       </article>
       <section>
-        <h2 class="visually-hidden">Рассылка</h2>
+        <h2 class="visually_hidden">Рассылка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <button>Отправить</button>
       </section>
       <section>
-        <h2 class="visually-hidden">Карта</h2>
+        <h2 class="visually_hidden">Карта</h2>
         <div>
           <img src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e399738d09d06c686bfb91cb5565e02b2ef4b6da4bdc970f50431af8b271657&amp;source=constructor" width="1200" height="430" alt="Карта">
         </div>
         <section class="contacts">
-          <h2 class="visually-hidden">Контактная информация</h2>
+          <h2 class="visually_hidden">Контактная информация</h2>
           <p>
             Адрес главного офиса
             и офлайн-магазина:
@@ -155,33 +157,33 @@
         </section>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="footer-social">
+    <footer class="page_footer">
+      <div class="footer_social">
         <ul>
-          <li><a class="button-social" href="#">Твиттер</a></li>
-          <li><a class="button-social" href="#">Инстаграм</a></li>
-          <li><a class="button-social" href="#">Фейсбук</a></li>
-          <li><a class="button-social" href="#">Вконтакте</a></li>
+          <li><a class="button_social" href="#">Твиттер</a></li>
+          <li><a class="button_social" href="#">Инстаграм</a></li>
+          <li><a class="button_social" href="#">Фейсбук</a></li>
+          <li><a class="button_social" href="#">Вконтакте</a></li>
         </ul>
       </div>
       <div>
         <ul>
-          <li class="logo-heart">
-            <a href="#for-suppliers">Для поставщиков</a>
+          <li class="logo_heart">
+            <a href="#for_suppliers">Для поставщиков</a>
           </li>
           <li>
-            <a href="#about-production">О производстве</a>
+            <a href="#about_production">О производстве</a>
           </li>
           <li>
-            <a href="#our-documents">Наши документы</a>
+            <a href="#our_documents">Наши документы</a>
           </li>
           <li>
-            <a href="#environmental-standards">Экологические стандарты</a>
+            <a href="#environmental_standards">Экологические стандарты</a>
           </li>
         </ul>
       </div>
       <div>
-        <a class="logo-footer" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="logo_footer" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo_htmlacademy.svg" width="108" height="39" alt="html academy ">
         </a>
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
