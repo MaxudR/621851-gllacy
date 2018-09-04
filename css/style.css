@@ -44,6 +44,15 @@ a:focus {
   list-style: none;
 }
 
+.logo_search input[type=search],
+.reg_hover input[type=email],
+.reg_hover input[type=password] {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
 .working_hours {
   font-size: 14px;
   line-height: 16px;
@@ -72,18 +81,22 @@ a:focus {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
+  background-color: #461d14;
 }
 
 .shares p {
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
+  background-color: #461d14;
+
 }
 
 .shares a {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+
 }
 
 .products a {
@@ -102,6 +115,108 @@ a:focus {
   font-size: 30px;
   line-height: 45px;
   font-weight: bold;
+
+}
+
+.product_wrap .product {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: medium;
+}
+
+.caption_advantages {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: medium;
+  background-color: #efe1c9;
+  color: #323232;
+}
+
+.advantages {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  background-color: #efe1c9;
+  color: #323232;
+}
+
+.blog_caption {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: medium;
+  color: #323232;
+}
+
+.blog a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.mailing p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.mailing input[type=email] {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.mailing button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contacts p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.contacts span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.contacts a {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer_links li {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.for_suppliers {
+  list-style: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.copyright p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .button {

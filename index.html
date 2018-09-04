@@ -146,7 +146,10 @@
         <section class="mailing">
           <h2 class="visually_hidden">Рассылка</h2>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <button  class="button">Отправить</button>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" name="email" placeholder="Электронная почта">
+            <button  class="button">Отправить</button>
+          </form>
         </section>
       </div>
       <section class="contact_map">
@@ -159,12 +162,12 @@
           <p>
             Адрес главного офиса
             и офлайн-магазина:
-            ул. Большая Конюшенная
-            19/8, Санкт-Петербург
+            <span>ул. Большая Конюшенная
+            19/8, Санкт-Петербург</span>
           </p>
           <p>
             Для заказов по телефону:
-            8 812 450-25-25
+            <span>8 812 450-25-25</span>
             (с 10 до 20 ежедневно)
           </p>
           <a class="button" href="#">Форма обратной связи</a>
@@ -183,7 +186,7 @@
       <div class="footer_nav">
         <ul class="footer_links">
           <li class="logo_heart">
-            <a href="#for_suppliers">Для поставщиков</a>
+            <a class="for_suppliers" href="#for_suppliers">Для поставщиков</a>
           </li>
           <li>
             <a href="#about_production">О производстве</a>
