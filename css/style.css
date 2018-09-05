@@ -217,14 +217,14 @@ a:focus {
   color: #323232;
 }
 
-.feedback label {
+.feedback textarea::placeholder { /*изменения */
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #999999;
 }
 
-.feedback button {
+.feedback  button {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -256,8 +256,6 @@ a:focus {
 
 .button {
   background: linear-gradient(to top, #f26843, #e74a35);
-<<<<<<< HEAD
-=======
 }
 
 .inner_page {
@@ -270,7 +268,7 @@ a:focus {
   font-weight: 400;
   color: #ffffff;
 
-  background-color: #849d8f;	
+  background-color: #849d8f;
 }
 
 .breadcrumbs {
@@ -285,35 +283,35 @@ a:focus {
   line-height: 16px;
   font-weight: 500;
   color: #323232;
-} 
+}
 
 .basket_list li {
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
-} 
+}
 
 .basket_list .gray {
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
   color: #999999;
-} 
+}
 
 .basket_list .total_price {
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
   color: #323232;
-} 
+}
 
 .basket_list .button {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
-} 
+}
 
 .ice_cream_catalog {
   font-size: 35px;
@@ -326,21 +324,21 @@ a:focus {
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
-  color: #ffffff;	
+  color: #ffffff;
 }
 
 .filter legend {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  color: #ffffff;	
+  color: #ffffff;
 }
 
 .filter legend:last-of-type  {
   font-size: 14px;
   line-height: auto;
   font-weight: 500;
-  color: #ffffff;	
+  color: #ffffff;
 }
 
 .product_wrap .button {
@@ -355,5 +353,4 @@ a:focus {
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
->>>>>>> b6c3108991bcc65ecd730f51085e6ca3d8fe38df
 }
