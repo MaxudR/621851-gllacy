@@ -53,6 +53,20 @@ a:focus {
   color: #999999;
 }
 
+.reg_hover button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.reg_hover a {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+}
+
 .working_hours {
   font-size: 14px;
   line-height: 16px;
@@ -190,6 +204,27 @@ a:focus {
 }
 
 .contacts a {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.feedback_caption a {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.feedback button {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
