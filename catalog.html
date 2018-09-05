@@ -57,7 +57,7 @@
         <a href="#">Забыли пароль?</a>
         <a href="#">Новая регистрация</a>
       </li>
-      <li class="logo_basket">
+      <li class="logo_basket basket_with_item">
         <a href="#basket">2 товара</a>
       </li>
     </ul>
@@ -67,18 +67,18 @@
           <button>Удалить</button>
           <img src="img/basket_ice_cream_1.jpg" width="33" height="33" alt="basket_ice_cream_1">
           <p>Пломбир с апельсиновым джемом</p>
-          <p>1,5 кг х 200 руб.</p>
+          <p>1,5 кг х <span class="gray">200 руб.</span></p> <!--плохое название класса-->
           <p>300 руб.</p>
         </li>
         <li>
           <button>Удалить</button>
           <img src="img/basket_ice_cream_2.jpg" width="33" height="33" alt="basket_ice_cream_2">
           <p>Клубничный пломбир с присыпкой  из белого шоколада</p>
-          <p>1,5 кг х 300 руб.</p>
+          <p>1,5 кг х <span class="gray">300 руб.</span></p> <!--плохое название класса-->
           <p>450 руб.</p>
         </li>
         <li>
-          <p>Итого:750 руб.</p>
+          <p class="total_price">Итого:750 руб.</p>
         </li>
         <li>
           <button class="button">Оформить заказ</button>
@@ -91,7 +91,7 @@
 </header>
 <main class="container">
   <h1 class="visually_hidden">Глейси-каталог</h1>
-  <h2 class="ice_cream_catalog">Сливочное мороженое</h2>
+  <h2 class="ice_cream_catalog">Сливочное мороженое</h2> <!--плохое название класса-->
   <ul class="breadcrumbs">
     <li><a href="#">Главная</a></li>
     <li>»<a href="#">Каталог</a></li>
