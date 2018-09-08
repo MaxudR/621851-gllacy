@@ -355,3 +355,13 @@ a:focus {
   color: #ffffff;
 }
 /*------------  Сеточные стили  --------------------*/
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+.main-header {
+
+}
