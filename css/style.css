@@ -385,11 +385,20 @@ body {
 .nav_item_hover:hover .catalog_list {
   display: block;
 }
-.catalog_list {
+
+.search_hover form {
   display: none;
 }
 
-.nav_item_hover:hover .catalog_list {
+.search_hover:hover form {
+  display: block;
+}
+
+.reg_hover {
+  display: none;
+}
+
+.sign_in_hover:hover .reg_hover {
   display: block;
 }
 
@@ -398,3 +407,5 @@ body {
   margin: 0 auto;
   padding: 0 27px;
 }
+
+
