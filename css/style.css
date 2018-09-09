@@ -363,5 +363,13 @@ body {
 }
 
 .main-header {
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
 }
+
+.logo_header {
+  align-self: center;
+}
+
