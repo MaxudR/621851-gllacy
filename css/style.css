@@ -362,14 +362,17 @@ body {
   min-height: 1750px;
 }
 
-.main-header {
+.main_header {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .logo_header {
   align-self: center;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
