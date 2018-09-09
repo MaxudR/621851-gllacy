@@ -376,3 +376,25 @@ body {
   width: 1px;
   height: 1px;
 }
+
+/*---------Сетки-------------------*/
+.catalog_list {
+  display: none;
+}
+
+.nav_item_hover:hover .catalog_list {
+  display: block;
+}
+.catalog_list {
+  display: none;
+}
+
+.nav_item_hover:hover .catalog_list {
+  display: block;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
