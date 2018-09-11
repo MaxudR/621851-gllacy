@@ -318,6 +318,7 @@ a:focus {
   line-height: 41px;
   font-weight: 700;
   color: #ffffff;
+  text-align: left;
 }
 
 .filter {
@@ -349,6 +350,7 @@ a:focus {
 }
 
 .pagination-list {
+  list-style: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -376,8 +378,6 @@ body {
   width: 1px;
   height: 1px;
 }
-
-/*---------Сетки-------------------*/
 .catalog_list {
   display: none;
 }
@@ -408,4 +408,94 @@ body {
   padding: 0 27px;
 }
 
+.slide {
+  text-align: center;
+  margin-bottom: 41px;
+}
 
+.shares {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.raspberry {
+  margin-right: 26px;
+}
+
+.chocolates {
+  width: 560px;
+}
+
+.product_hits {
+  display: flex;
+}
+
+.product_wrap {
+  width: 267px;
+}
+
+.product_wrap:not(:last-child) {
+    margin-right: 26px;
+}
+
+.product {
+  text-align: center;
+  white-space: normal;
+}
+
+.about_shop {
+  margin-bottom: 40px;
+}
+
+.advantages li {
+  width: 560px;
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog_mailing {
+  display: flex;
+  margin-bottom: 487px;
+}
+
+.blog {
+  margin-right: 26px;
+  width: 560px;
+}
+
+.mailing {
+  width: 560px;
+}
+
+.contacts {
+  width: 302px;
+}
+
+.page_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filter {
+  max-width: 860px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.pagination {
+  text-align: right;
+}
