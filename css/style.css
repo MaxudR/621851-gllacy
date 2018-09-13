@@ -426,12 +426,9 @@ body {
   width: 560px;
 }
 
-.product_hits {
+.products {
   display: flex;
-}
-
-.product_catalog {
-  display: flex;
+  flex-wrap: wrap;
 }
 
 .product_wrap {
