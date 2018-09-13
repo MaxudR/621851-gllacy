@@ -436,7 +436,7 @@ body {
   width: 267px;
 }
 
-.product_wrap:not(:last-child) {
+.product_wrap:not(:nth-child(4n)) {
     margin-right: 26px;
 }
 
