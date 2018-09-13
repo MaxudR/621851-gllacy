@@ -430,6 +430,10 @@ body {
   display: flex;
 }
 
+.product_catalog {
+  display: flex;
+}
+
 .product_wrap {
   width: 267px;
 }
