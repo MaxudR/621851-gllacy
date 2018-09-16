@@ -17,7 +17,7 @@ body {
 .advantages,
 .social_network,
 .footer_link,
-.user-navigation {
+.user_navigation {
   list-style: none;
 }
 
@@ -36,7 +36,7 @@ a:focus {
   font-weight: 700;
 }
 
-.user-navigation_list > li {
+.user_navigation  li {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -67,6 +67,10 @@ a:focus {
   color: #323232;
 }
 
+.header_info {
+  position: absolute;
+}
+
 .working_hours {
   font-size: 14px;
   line-height: 16px;
@@ -95,14 +99,12 @@ a:focus {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
-  background-color: #461d14;
 }
 
 .shares p {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  background-color: #461d14;
 
 }
 
@@ -142,7 +144,6 @@ a:focus {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  background-color: #efe1c9;
   color: #323232;
 }
 
@@ -150,7 +151,6 @@ a:focus {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  background-color: #efe1c9;
   color: #323232;
 }
 
@@ -162,13 +162,14 @@ a:focus {
 }
 
 .blog a {
+  text-decoration: none;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #323232;
 }
 
-.mailing p {
+.mailing_text {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -367,17 +368,63 @@ body {
 .main_header {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  height: 74px;
+}
+
+.main_navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site_navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-right: 375px;
+  width: 350px;
+  padding: 0;
+}
+
+.user_navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 0;
+  width: 247px;
+}
+
+.button_magnifier {
+  width: 33px;
+  height: 33px;
+  border-radius: 50% 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
 }
 
 .logo_header {
-  align-self: center;
+  margin-top: 10px;
+  margin-right: 24px;
 }
 
-.visually-hidden {
+.visually_hidden:not(:focus):not(:active),
+input[type="checkbox"].visually_hidden,
+input[type="radio"].visually_hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 .catalog_list {
   display: none;
 }
@@ -402,6 +449,16 @@ body {
   display: block;
 }
 
+.header_info {
+text-align: right;
+position: absolute;
+top: 70px;
+right: 20px;
+margin: 0;
+padding: 0;
+}
+
+
 .container {
   width: 1146px;
   margin: 0 auto;
@@ -418,13 +475,44 @@ body {
   margin-bottom: 40px;
 }
 
-.raspberry {
+.share_card {
+  width: 560px;
+  min-height: 230px;
+  text-align: right;
+}
+
+.share_card_raspberry {
+  background-color: #461d14;
+  background-image: url(../img/razzberry.jpg);
   margin-right: 26px;
 }
 
-.chocolates {
-  width: 560px;
+.share_card_chocolate {
+  background-color: #461d14;
+  background-image: url(../img/chocolate.jpg);
 }
+
+.cart_caption {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.share_card p {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.button_raspberry {
+  width: 165px;
+  margin-right: 20px;
+
+}
+
+.button_chocolate {
+  width: 190px;
+  margin-right: 20px;
+}
+
 
 .products {
   display: flex;
@@ -434,6 +522,10 @@ body {
 
 .product_wrap {
   width: 267px;
+}
+
+.product_wrap img {
+  border-radius: 9999999999px;
 }
 
 .product_wrap:not(:nth-child(4n)) {
@@ -447,35 +539,197 @@ body {
 
 .about_shop {
   margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: #efe1c9;
+  padding: 15px 0;
+  background-image: url(../img/wafer_pattern.jpg);
 }
 
-.advantages li {
-  width: 560px;
+.caption_advantages {
+margin: 10px 20px;
 }
 
 .advantages {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage_i {
+  width: 560px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 11px 21px 11px 68px;
+}
+
+.advantage_i_popsicle{
+  background-image: url(../img/popsicle.svg);
+  background-position: 15px 1px;
+  background-repeat: no-repeat;
+}
+
+.advantage_i_cow{
+  background-image: url(../img/cow.svg);
+  background-position: 15px 1px;
+  background-repeat: no-repeat;
+}
+
+.advantage_i_leaf{
+  background-image: url(../img/leaf.svg);
+  background-position: 15px 1px;
+  background-repeat: no-repeat;
+}
+
+.advantage_i_thermometer{
+  background-image: url(../img/thermometer.svg);
+  background-position: 15px 1px;
+  background-repeat: no-repeat;
 }
 
 .blog_mailing {
   display: flex;
-  margin-bottom: 487px;
+  justify-content: space-between;
+}
+
+.blog_mailing_i {
+    margin: 0 0 487px;
+    height: 220px;
 }
 
 .blog {
   margin-right: 26px;
   width: 560px;
+  min-height: 220px;
+  background-image: url(../img/laying.jpg);
+  border-radius: 15px;
+}
+
+.blog h2 {
+  margin: 0px;
+  margin-left: 20px;
+  padding-top: 30px;
+}
+
+.blog p {
+  margin-left: 20px;
+  width: 290px;
+}
+
+.blog a {
+  border-bottom: 2px solid #323232;
 }
 
 .mailing {
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: #ffffff;
   width: 560px;
+  min-height: 220px;
+  background-image: url(../img/striped_back.png);
+  border-radius: 15px;
+}
+
+.mailing_form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 28px 20px 35px;
+  height: auto;
+  background-color: #f8f7f4;
+  border-radius: 12px;
+  font-size: 0;
+}
+
+.mailing_text {
+margin-bottom: 15px;
+align-self: flex-start;
+min-height: 88px;
+font-size: 16px;
+line-height: 22px;
+font-weight: 400;
+text-align: left;
+}
+
+.mailing_form input[type=email] {
+    margin-right: 12px;
+    box-sizing: border-box;
+    padding: 9px 15px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    outline: none;
+}
+
+----------------------------------------
+
+
+.contact_map {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
+
+.map {
+    overflow: hidden;
+    background-image: url(../img/map.jpg);
+    width: 1200px;
+    height: 430px;
 }
 
 .contacts {
+  position: absolute;
+  top: 70px;
+  right: 20px;
   width: 302px;
 }
+
+.contacts p:nth-of-type(1) {
+    width: 148px;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 7px;
+    }
+
+.contacts p:nth-of-type(2) {
+    width: 222px;
+    margin-left: 25px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+  }
+
+  .contacts p:nth-of-type(3) {
+    margin-left: 25px;
+    margin-top: 12px;
+    margin-bottom: 7px;
+}
+
+  .contacts p:nth-of-type(4) {
+    margin-left: 25px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+  .contacts p:nth-of-type(5) {
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+  .contacts a {
+    width: 252px;
+    height: 44px;
+    margin-bottom: 31px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 25px;
+    box-shadow: none;
+    text-align: center;
+}
+------------------------------------------
+
 
 .page_footer {
   display: flex;

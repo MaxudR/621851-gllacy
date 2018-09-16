@@ -9,31 +9,27 @@
   <body>
     <div class="container">
       <header class="main_header">
-        <div>
-          <a class="logo_header">
-            <img src="img/logo_gllacy.svg" width="154" height="64" alt="Gllacy Shop">
-          </a>
-          <nav class="main_navigation">
-            <ul class="site_navigation">
-              <li class="nav_item nav_item_hover">
-                <a href="#catalog" class="nav_catalog">Каталог</a>
-                <ul class="catalog_list">
-                  <li><a href="#">Новинки</a></li>
-                  <li><a href="#">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>
-              </li>
-              <li class="nav_item"><a href="#delivery_and_payment">Доставка и оплата</a></li>
-              <li class="nav_item"><a href="#about_company">О Компании</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="user_navigation">
-          <ul class="user-navigation_list">
+        <a class="logo_header">
+          <img src="img/logo_gllacy.svg" width="154" height="64" alt="Gllacy Shop">
+        </a>
+        <nav class="main_navigation">
+          <ul class="site_navigation">
+            <li class="nav_item nav_item_hover">
+              <a href="#catalog" class="nav_catalog">Каталог</a>
+              <ul class="catalog_list">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="nav_item"><a href="#delivery_and_payment">Доставка и оплата</a></li>
+            <li class="nav_item"><a href="#about_company">О Компании</a></li>
+          </ul>
+          <ul class="user_navigation">
             <li class="logo_search search_hover">
-              <button>#</button>
+              <button class="button_magnifier">#</button>
               <form action="https://echo.htmlacademy.ru" method="get">
                 <input type="search" name="search" placeholder="Что ищем?">
               </form>
@@ -54,7 +50,7 @@
               <a href="#basket">Пусто</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <div class="header_info">
           <p class="working_hours">С 10 до 20, ежедневно</p>
           <p class="header_phone">8 812 450-25-25</p>
@@ -80,15 +76,15 @@
           </div>
         </div>
         <div class="shares">
-          <article class="raspberry">
-            <h2 class="raspberry_free">Малинка даром!</h2>
+          <article class="share_card share_card_raspberry">
+            <h2 class="cart_caption">Малинка даром!</h2>
             <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ малинового варенья бесплатно.</p>
-            <a class="button" href="#">Хочу варенье!</a>
+            <a class="button button_raspberry" href="#">Хочу варенье!</a>
           </article>
-          <article class="chocolates">
-            <h2 class="chocolates_free">Шоколадки даром!</h2>
+          <article class="share_card share_card_chocolate">
+            <h2 class="cart_caption">Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a class="button" href="#">Хочу шоколадки!</a>
+            <a class="button button_chocolate" href="#">Хочу шоколадки!</a>
           </article>
         </div>
         <section class="product_hits">
@@ -123,49 +119,34 @@
         <section class="about_shop">
           <h2 class="caption_advantages">Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <ul class="advantages">
-            <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-            <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-            <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-            <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+            <li class="advantage_i advantage_i_popsicle">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+            <li class="advantage_i advantage_i_cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+            <li class="advantage_i advantage_i_leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+            <li class="advantage_i advantage_i_thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
           </ul>
         </section>
         <div class="blog_mailing">
+          <div class="blog_mailing_i">
           <article class="blog">
             <h2 class="blog_caption">Новое в нашем блоге</h2>
             <p>
               <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
             </p>
           </article>
+        </div>
+        <div class="blog_mailing_i">
           <section class="mailing">
             <h2 class="visually_hidden">Рассылка</h2>
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form class="mailing_form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="mailing_text">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </div>
               <input type="email" name="email" placeholder="Электронная почта">
               <button  class="button">Отправить</button>
             </form>
           </section>
         </div>
-        <section class="contact_map">
-          <h2 class="visually_hidden">Карта</h2>
-          <div>
-            <img src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e399738d09d06c686bfb91cb5565e02b2ef4b6da4bdc970f50431af8b271657&amp;source=constructor" width="1200" height="430" alt="Карта">
-          </div>
-          <section class="contacts">
-            <h2 class="visually_hidden">Контактная информация</h2>
-            <p>
-              Адрес главного офиса
-              и офлайн-магазина:
-              <span>ул. Большая Конюшенная
-              19/8, Санкт-Петербург</span>
-            </p>
-            <p>
-              Для заказов по телефону:
-              <span>8 812 450-25-25</span>
-              (с 10 до 20 ежедневно)
-            </p>
-            <a class="button" href="#">Форма обратной связи</a>
-          </section>
-        </section>
+        </div>
       </main>
       <footer class="page_footer">
         <div class="footer_social">
@@ -199,6 +180,25 @@
           <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
         </div>
       </footer>
+    </div>
+
+      <div class="map_container">
+        <section class="contact_map">
+          <h2 class="visually_hidden">Карта</h2>
+          <div class="map">
+          </div>
+          <section class="contacts">
+            <h2 class="visually_hidden">Контактная информация</h2>
+            <p>Адрес главного офиса и офлайн-магазина:</p>
+            <p><span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+            <p>Для заказов по телефону:
+            <p><span>8 812 450-25-25</span></p>
+            <p>(с 10 до 20 ежедневно)</p>
+            <a class="button" href="#">Форма обратной связи</a>
+          </section>
+        </section>
+      </div>
+
       <div class="feedback">
         <h2 class="feedback_caption">Мы обязательно вам ответим!</h2>
         <button>Х Закрыть</button>
@@ -215,6 +215,8 @@
           <button class="button">Отправить</button>
         </form>
       </div>
-    </div>
+
+
+
   </body>
 </html>
